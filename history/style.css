@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fdf3e7;
     color: #3e2e1c;
@@ -72,8 +76,6 @@ header p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
 }
 
-
-
 .old-document {
     display: flex;
     position: relative;
@@ -86,9 +88,9 @@ header p {
     align-items: center;
 }
 
-img {
+/* img {
     width: 100%;
-}
+} */
 
 .avatar {
     width: 50%;
@@ -96,4 +98,61 @@ img {
 
 details {
     cursor: default;
+}
+
+.sidebar {
+    position: fixed;
+    top: 170px; /* Отступ, чтобы не перекрывать header (примерный размер header) */
+    left: 0;
+    width: 300px;
+    height: 665px; /* Высота экрана минус высота header */
+    background-color: rgba(255, 255, 255, 0.9); /* Светлый фон с прозрачностью */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #b89d71; /* Вертикальная линия справа */
+    overflow-y: auto; /* Добавляет прокрутку для длинного меню */
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    color: #3e2e1c;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #b89d71; /* Подчёркивание заголовка */
+    padding-bottom: 5px;
+}
+
+.sidebar a {
+    display: block;
+    margin: 5px 0;
+    color: #3e2e1c;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.sidebar a:hover {
+    color: #007BFF;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 5px;
+}
+
+.sidebar .subcategory {
+    margin-left: 10px; /* Отступ для подкатегорий */
+    font-size: 13px;
+    color: #5a4c3b;
+}
+
+.sidebar .subcategory a {
+    color: #5a4c3b;
+}
+
+.sidebar .subcategory a:hover {
+    color: #007BFF;
+}
+
+.content {
+    margin-left: 220px; /* Отступ для основного контента */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
