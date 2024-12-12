@@ -71,6 +71,7 @@ header p {
     flex-flow: row nowrap;
     max-width: 1000px;
     margin: 0 auto;
+    margin-left: 30%
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
@@ -104,7 +105,7 @@ details {
     position: fixed;
     top: 170px; /* Отступ, чтобы не перекрывать header (примерный размер header) */
     left: 0;
-    width: 300px;
+    width: 25%
     height: 665px; /* Высота экрана минус высота header */
     background-color: rgba(255, 255, 255, 0.9); /* Светлый фон с прозрачностью */
     padding: 20px;
