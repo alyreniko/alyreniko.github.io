@@ -10,12 +10,12 @@
             font-family: Arial, sans-serif;
             color: #fff;
             margin: 20px;
-            text-align: center;
+            text-align: center; /* Центровка текста всего сайта */
         }
 
         h3, p {
-            margin: 20px auto;
-            text-align: center;
+            margin: 20px auto; /* Центровка заголовков и абзацев */
+            text-align: center; /* Центровка текста */
         }
 
         p {
@@ -23,9 +23,9 @@
         }
 
         table {
-            width: 90%;
-            max-width: 600px;
-            margin: 0 auto;
+            width: 90%; /* Ширина таблицы на телефоне */
+            max-width: 1000px; /* Максимальная ширина таблицы для больших экранов */
+            margin: 0 auto; /* Центрирование таблицы */
             border-collapse: separate;
             border-spacing: 0;
             border-radius: 15px;
@@ -68,7 +68,8 @@
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
         }
-        
+
+        /* Адаптивный стиль для телефонов */
         @media screen and (max-width: 768px) {
             table {
                 width: 100%;
@@ -109,338 +110,438 @@
     </style>
 </head>
 <body>
-    <!-- Необработанная древесина -->
-    <h3>Необработанная древесина</h3>
+    <!-- Железная руда -->
+    <h3>Железная руда</h3>
     <table>
         <thead>
-        <tr>
-        <th style="text-align:center">Ресурс💎</th>
-        <th style="text-align:center">Топлива🛢</th>
-        <th style="text-align:center">Время горения🕑</th>
-        <th style="text-align:center">Получим в итоге🧱</th>
-        <th style="text-align:center">Перегрев🔥</th>
-        </tr>
+            <tr>
+                <th style="text-align:center">Тип топлива💎</th>
+                <th style="text-align:center">Кол-во топлива🛢</th>
+                <th style="text-align:center">Время горения🕑</th>
+                <th style="text-align:center">Слитков в итоге🧱</th>
+                <th style="text-align:center">Перегрев🔥</th>
+                </tr>
         </thead>
         <tbody>
-        <tr>
-        <td style="text-align:center">Железо</td>
-        <td style="text-align:center">101</td>
-        <td style="text-align:center">8:25:00</td>
-        <td style="text-align:center">5</td>
-        <td style="text-align:center">84.2%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Медь</td>
-        <td style="text-align:center">97</td>
-        <td style="text-align:center">8:05:00</td>
-        <td style="text-align:center">4</td>
-        <td style="text-align:center">80.9%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Серебро</td>
-        <td style="text-align:center">113</td>
-        <td style="text-align:center">9:25:00</td>
-        <td style="text-align:center">4</td>
-        <td style="text-align:center">94.2%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Золото</td>
-        <td style="text-align:center">97</td>
-        <td style="text-align:center">8:05:00</td>
-        <td style="text-align:center">3</td>
-        <td style="text-align:center">80.9%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Сера</td>
-        <td style="text-align:center">109</td>
-        <td style="text-align:center">9:05:00</td>
-        <td style="text-align:center">18</td>
-        <td style="text-align:center">90.9%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Сталь</td>
-        <td style="text-align:center">113</td>
-        <td style="text-align:center">9:25:00</td>
-        <td style="text-align:center">7</td>
-        <td style="text-align:center">94.2%</td>
-        </tr>
+            <tr> <!-- Необработанная древесина -->
+                <td style="text-align:center">Необработанная древесина</td>
+                <td style="text-align:center">101</td>
+                <td style="text-align:center">8:25:00</td>
+                <td style="text-align:center">5</td>
+                <td style="text-align:center">84.2%</td>
+            </tr>
+            <tr> <!-- Обработанная древесина -->
+                <td style="text-align:center">Обработанная древесина</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Пиломатериалы -->
+                <td style="text-align:center">Пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Качественные пиломатериалы -->
+                <td style="text-align:center">Качественные пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Древесные щепки -->
+                <td style="text-align:center">Древесные щепки</td>
+                <td style="text-align:center">100</td>
+                <td style="text-align:center">8:20:00</td>
+                <td style="text-align:center">5</td>
+                <td style="text-align:center">83.4%</td>
+            </tr>
+            <tr> <!-- Уголь -->
+                <td style="text-align:center">Уголь</td>
+                <td style="text-align:center">50</td>
+                <td style="text-align:center">8:20:00</td>
+                <td style="text-align:center">5</td>
+                <td style="text-align:center">83.4%</td>
+            </tr>
+            <tr> <!-- Топливо низкого качества -->
+                <td style="text-align:center">Топливо низкого качества</td>
+                <td style="text-align:center">50</td>
+                <td style="text-align:center">8:20:00</td>
+                <td style="text-align:center">5</td>
+                <td style="text-align:center">83.4%</td>
+            </tr>
+            <tr> <!-- Обычное топливо -->
+                <td style="text-align:center">Обычное топливо</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
         </tbody>
-    </table>        
-    <!-- Необработанная древесина -->
-
-    <!-- Обработанная древесина -->
-    <h3>Обработанная древесина</h3>
-    <table>
-        <thead>
-        <tr>
-        <th style="text-align:center">Ресурс💎</th>
-        <th style="text-align:center">Топлива🛢</th>
-        <th style="text-align:center">Время горения🕑</th>
-        <th style="text-align:center">Получим в итоге🧱</th>
-        <th style="text-align:center">Перегрев🔥</th>
-        </tr>
-        <tbody>
-        <tr>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        </tr>
-        </tbody>
-        </thead>
     </table>
-    <!-- Обработанная древесина -->
 
-    <!-- Пиломатериалы -->
-    <h3>Пиломатериалы</h3>
+    <!-- Медная руда -->
+    <h3>Медная руда</h3>
     <table>
         <thead>
-        <tr>
-        <th style="text-align:center">Ресурс💎</th>
-        <th style="text-align:center">Топлива🛢</th>
-        <th style="text-align:center">Время горения🕑</th>
-        <th style="text-align:center">Получим в итоге🧱</th>
-        <th style="text-align:center">Перегрев🔥</th>
-        </tr>
-        <tbody>
-        <tr>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        </tr>
-        </tbody>
+            <tr>
+                <th style="text-align:center">Тип топлива💎</th>
+                <th style="text-align:center">Кол-во топлива🛢</th>
+                <th style="text-align:center">Время горения🕑</th>
+                <th style="text-align:center">Слитков в итоге🧱</th>
+                <th style="text-align:center">Перегрев🔥</th>
+                </tr>
         </thead>
+        <tbody>
+            <tr> <!-- Необработанная древесина -->
+                <td style="text-align:center">Необработанная древесина</td>
+                <td style="text-align:center">97</td>
+                <td style="text-align:center">8:05:00</td>
+                <td style="text-align:center">4</td>
+                <td style="text-align:center">80.9%</td>
+            </tr>
+            <tr> <!-- Обработанная древесина -->
+                <td style="text-align:center">Обработанная древесина</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Пиломатериалы -->
+                <td style="text-align:center">Пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Качественные пиломатериалы -->
+                <td style="text-align:center">Качественные пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Древесные щепки -->
+                <td style="text-align:center">Древесные щепки</td>
+                <td style="text-align:center">96</td>
+                <td style="text-align:center">8:00:00</td>
+                <td style="text-align:center">4</td>
+                <td style="text-align:center">80.0%</td>
+            </tr>
+            <tr> <!-- Уголь -->
+                <td style="text-align:center">Уголь</td>
+                <td style="text-align:center">48</td>
+                <td style="text-align:center">8:00:00</td>
+                <td style="text-align:center">4</td>
+                <td style="text-align:center">80.0%</td>
+            </tr>
+            <tr> <!-- Топливо низкого качества -->
+                <td style="text-align:center">Топливо низкого качества</td>
+                <td style="text-align:center">48</td>
+                <td style="text-align:center">8:00:00</td>
+                <td style="text-align:center">4</td>
+                <td style="text-align:center">80.0%</td>
+            </tr>
+            <tr> <!-- Обычное топливо -->
+                <td style="text-align:center">Обычное топливо</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+        </tbody>
     </table>
-    <!-- Пиломатериалы -->
 
-    <!-- Качественные пиломатериалы -->
-    <h3>Качественные пиломатериалы</h3>
+    <!-- Серебряная руда -->
+    <h3>Серебряная руда</h3>
     <table>
         <thead>
-        <tr>
-        <th style="text-align:center">Ресурс💎</th>
-        <th style="text-align:center">Топлива🛢</th>
-        <th style="text-align:center">Время горения🕑</th>
-        <th style="text-align:center">Получим в итоге🧱</th>
-        <th style="text-align:center">Перегрев🔥</th>
-        </tr>
-        <tbody>
-        <tr>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        </tr>
-        </tbody>
+            <tr>
+                <th style="text-align:center">Тип топлива💎</th>
+                <th style="text-align:center">Кол-во топлива🛢</th>
+                <th style="text-align:center">Время горения🕑</th>
+                <th style="text-align:center">Слитков в итоге🧱</th>
+                <th style="text-align:center">Перегрев🔥</th>
+            </tr>
         </thead>
+        <tbody>
+            <tr> <!-- Необработанная древесина -->
+                <td style="text-align:center">Необработанная древесина</td>
+                <td style="text-align:center">113</td>
+                <td style="text-align:center">9:25:00</td>
+                <td style="text-align:center">4</td>
+                <td style="text-align:center">94.2%</td>
+            </tr>
+            <tr> <!-- Обработанная древесина -->
+                <td style="text-align:center">Обработанная древесина</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Пиломатериалы -->
+                <td style="text-align:center">Пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Качественные пиломатериалы -->
+                <td style="text-align:center">Качественные пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Древесные щепки -->
+                <td style="text-align:center">Древесные щепки</td>
+                <td style="text-align:center">112</td>
+                <td style="text-align:center">9:20:00</td>
+                <td style="text-align:center">4</td>
+                <td style="text-align:center">93.4%</td>
+            </tr>
+            <tr> <!-- Уголь -->
+                <td style="text-align:center">Уголь</td>
+                <td style="text-align:center">56</td>
+                <td style="text-align:center">9:20:00</td>
+                <td style="text-align:center">4</td>
+                <td style="text-align:center">93.4%</td>
+            </tr>
+            <tr> <!-- Топливо низкого качества -->
+                <td style="text-align:center">Топливо низкого качества</td>
+                <td style="text-align:center">56</td>
+                <td style="text-align:center">9:20:00</td>
+                <td style="text-align:center">4</td>
+                <td style="text-align:center">93.4%</td>
+            </tr>
+            <tr> <!-- Обычное топливо -->
+                <td style="text-align:center">Обычное топливо</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+        </tbody>
     </table>
-    <!-- Качественные пиломатериалы -->
 
-    <!-- Древесные щепки -->
-    <h3>Древесные щепки</h3>
+    <!-- Золотая руда -->
+    <h3>Золотая руда</h3>
     <table>
         <thead>
-        <tr>
-        <th style="text-align:center">Ресурс💎</th>
-        <th style="text-align:center">Топлива🛢</th>
-        <th style="text-align:center">Время горения🕑</th>
-        <th style="text-align:center">Получим в итоге🧱</th>
-        <th style="text-align:center">Перегрев🔥</th>
-        </tr>
+            <tr>
+                <th style="text-align:center">Тип топлива💎</th>
+                <th style="text-align:center">Кол-во топлива🛢</th>
+                <th style="text-align:center">Время горения🕑</th>
+                <th style="text-align:center">Слитков в итоге🧱</th>
+                <th style="text-align:center">Перегрев🔥</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-        <td style="text-align:center">Железо</td>
-        <td style="text-align:center">106</td>
-        <td style="text-align:center">8:50:00</td>
-        <td style="text-align:center">7</td>
-        <td style="text-align:center">88.4%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Медь</td>
-        <td style="text-align:center">109</td>
-        <td style="text-align:center">9:05:00</td>
-        <td style="text-align:center">6</td>
-        <td style="text-align:center">90.9%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Серебро</td>
-        <td style="text-align:center">106</td>
-        <td style="text-align:center">8:50:00</td>
-        <td style="text-align:center">5</td>
-        <td style="text-align:center">88.4%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Золото</td>
-        <td style="text-align:center">97</td>
-        <td style="text-align:center">8:05:00</td>
-        <td style="text-align:center">4</td>
-        <td style="text-align:center">80.9%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Сера</td>
-        <td style="text-align:center">109</td>
-        <td style="text-align:center">9:05:00</td>
-        <td style="text-align:center">24</td>
-        <td style="text-align:center">90.9%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Сталь</td>
-        <td style="text-align:center">109</td>
-        <td style="text-align:center">9:05:00</td>
-        <td style="text-align:center">9</td>
-        <td style="text-align:center">90.9%</td>
-        </tr>
+            <tr> <!-- Необработанная древесина -->
+                <td style="text-align:center">Необработанная древесина</td>
+                <td style="text-align:center">97</td>
+                <td style="text-align:center">8:05:00</td>
+                <td style="text-align:center">3</td>
+                <td style="text-align:center">80.9%</td>
+            </tr>
+            <tr> <!-- Обработанная древесина -->
+                <td style="text-align:center">Обработанная древесина</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Пиломатериалы -->
+                <td style="text-align:center">Пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Качественные пиломатериалы -->
+                <td style="text-align:center">Качественные пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Древесные щепки -->
+                <td style="text-align:center">Древесные щепки</td>
+                <td style="text-align:center">96</td>
+                <td style="text-align:center">8:00:00</td>
+                <td style="text-align:center">3</td>
+                <td style="text-align:center">80.0%</td>
+            </tr>
+            <tr> <!-- Уголь -->
+                <td style="text-align:center">Уголь</td>
+                <td style="text-align:center">48</td>
+                <td style="text-align:center">8:00:00</td>
+                <td style="text-align:center">3</td>
+                <td style="text-align:center">80.0%</td>
+            </tr>
+            <tr> <!-- Топливо низкого качества -->
+                <td style="text-align:center">Топливо низкого качества</td>
+                <td style="text-align:center">48</td>
+                <td style="text-align:center">8:00:00</td>
+                <td style="text-align:center">3</td>
+                <td style="text-align:center">80.0%</td>
+            </tr>
+            <tr> <!-- Обычное топливо -->
+                <td style="text-align:center">Обычное топливо</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
         </tbody>
-    </table>        
-    <!-- Древесные щепки -->
-
-    <!-- Уголь -->
-    <h3>Уголь</h3>
-    <table>
-        <thead>
-        <tr>
-        <th style="text-align:center">Ресурс💎</th>
-        <th style="text-align:center">Топлива🛢</th>
-        <th style="text-align:center">Время горения🕑</th>
-        <th style="text-align:center">Получим в итоге🧱</th>
-        <th style="text-align:center">Перегрев🔥</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td style="text-align:center">Железо</td>
-        <td style="text-align:center">52</td>
-        <td style="text-align:center">8:40:00</td>
-        <td style="text-align:center">6</td>
-        <td style="text-align:center">86.7%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Медь</td>
-        <td style="text-align:center">52</td>
-        <td style="text-align:center">8:40:00</td>
-        <td style="text-align:center">5</td>
-        <td style="text-align:center">86.7%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Серебро</td>
-        <td style="text-align:center">48</td>
-        <td style="text-align:center">8:00:00</td>
-        <td style="text-align:center">4</td>
-        <td style="text-align:center">80.0%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Золото</td>
-        <td style="text-align:center">55</td>
-        <td style="text-align:center">9:10:00</td>
-        <td style="text-align:center">4</td>
-        <td style="text-align:center">91.7%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Сера</td>
-        <td style="text-align:center">54</td>
-        <td style="text-align:center">9:00:00</td>
-        <td style="text-align:center">21</td>
-        <td style="text-align:center">90.0%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Сталь</td>
-        <td style="text-align:center">55</td>
-        <td style="text-align:center">9:10:00</td>
-        <td style="text-align:center">8</td>
-        <td style="text-align:center">91.7%</td>
-        </tr>
-        </tbody>
-    </table>        
-    <!-- Уголь -->
-
-    <!-- Топливо низкого качества -->
-    <h3>Топливо низкого качества</h3>
-    <table>
-        <thead>
-        <tr>
-        <th style="text-align:center">Ресурс💎</th>
-        <th style="text-align:center">Топлива🛢</th>
-        <th style="text-align:center">Время горения🕑</th>
-        <th style="text-align:center">Получим в итоге🧱</th>
-        <th style="text-align:center">Перегрев🔥</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td style="text-align:center">Железо</td>
-        <td style="text-align:center">53</td>
-        <td style="text-align:center">8:50:00</td>
-        <td style="text-align:center">7</td>
-        <td style="text-align:center">88.4%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Медь</td>
-        <td style="text-align:center">55</td>
-        <td style="text-align:center">9:10:00</td>
-        <td style="text-align:center">6</td>
-        <td style="text-align:center">91.7%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Серебро</td>
-        <td style="text-align:center">53</td>
-        <td style="text-align:center">8:50:00</td>
-        <td style="text-align:center">5</td>
-        <td style="text-align:center">88.4%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Золото</td>
-        <td style="text-align:center">49</td>
-        <td style="text-align:center">8:10:00</td>
-        <td style="text-align:center">4</td>
-        <td style="text-align:center">81.7%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Сера</td>
-        <td style="text-align:center">55</td>
-        <td style="text-align:center">9:10:00</td>
-        <td style="text-align:center">24</td>
-        <td style="text-align:center">91.7%</td>
-        </tr>
-        <tr>
-        <td style="text-align:center">Сталь</td>
-        <td style="text-align:center">55</td>
-        <td style="text-align:center">9:10:00</td>
-        <td style="text-align:center">9</td>
-        <td style="text-align:center">91.7%</td>
-        </tr>
-        </tbody>
-    </table>        
-    <!-- Топливо низкого качества -->
-
-    <!-- Обычное топливо -->
-    <h3>Обычное топливо</h3>
-    <table>
-        <thead>
-        <tr>
-        <th style="text-align:center">Ресурс💎</th>
-        <th style="text-align:center">Топлива🛢</th>
-        <th style="text-align:center">Время горения🕑</th>
-        <th style="text-align:center">Получим в итоге🧱</th>
-        <th style="text-align:center">Перегрев🔥</th>
-        </tr>
-        <tbody>
-        <tr>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        <td style="text-align:center">Нет данных</td>
-        </tr>
-        </tbody>
-        </thead>
     </table>
-    <!-- Обычное топливо -->
 
-     <p>Подтвержденные значения отмечены значком ✅.<br>Если рядом с информацией вы видите галочку, это означает, что она проверена и достоверна.</p>
+    <!-- Серная руда -->
+    <h3>Серная руда</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align:center">Тип топлива💎</th>
+                <th style="text-align:center">Кол-во топлива🛢</th>
+                <th style="text-align:center">Время горения🕑</th>
+                <th style="text-align:center">Слитков в итоге🧱</th>
+                <th style="text-align:center">Перегрев🔥</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!-- Необработанная древесина -->
+                <td style="text-align:center">Необработанная древесина</td>
+                <td style="text-align:center">109</td>
+                <td style="text-align:center">9:05:00</td>
+                <td style="text-align:center">18</td>
+                <td style="text-align:center">90.9%</td>
+            </tr>
+            <tr> <!-- Обработанная древесина -->
+                <td style="text-align:center">Обработанная древесина</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Пиломатериалы -->
+                <td style="text-align:center">Пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Качественные пиломатериалы -->
+                <td style="text-align:center">Качественные пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Древесные щепки -->
+                <td style="text-align:center">Древесные щепки</td>
+                <td style="text-align:center">108</td>
+                <td style="text-align:center">9:00:00</td>
+                <td style="text-align:center">18</td>
+                <td style="text-align:center">90.0%</td>
+            </tr>
+            <tr> <!-- Уголь -->
+                <td style="text-align:center">Уголь</td>
+                <td style="text-align:center">54</td>
+                <td style="text-align:center">9:00:00</td>
+                <td style="text-align:center">18</td>
+                <td style="text-align:center">90.0%</td>
+            </tr>
+            <tr> <!-- Топливо низкого качества -->
+                <td style="text-align:center">Топливо низкого качества</td>
+                <td style="text-align:center">54</td>
+                <td style="text-align:center">9:00:00</td>
+                <td style="text-align:center">18</td>
+                <td style="text-align:center">90.0%</td>
+            </tr>
+            <tr> <!-- Обычное топливо -->
+                <td style="text-align:center">Обычное топливо</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Стальной слиток -->
+    <h3>Стальной слиток</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align:center">Тип топлива💎</th>
+                <th style="text-align:center">Кол-во топлива🛢</th>
+                <th style="text-align:center">Время горения🕑</th>
+                <th style="text-align:center">Слитков в итоге🧱</th>
+                <th style="text-align:center">Перегрев🔥</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!-- Необработанная древесина -->
+                <td style="text-align:center">Необработанная древесина</td>
+                <td style="text-align:center">113</td>
+                <td style="text-align:center">9:25:00</td>
+                <td style="text-align:center">7</td>
+                <td style="text-align:center">94.2%</td>
+            </tr>
+            <tr> <!-- Обработанная древесина -->
+                <td style="text-align:center">Обработанная древесина</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Пиломатериалы -->
+                <td style="text-align:center">Пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Качественные пиломатериалы -->
+                <td style="text-align:center">Качественные пиломатериалы</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+            <tr> <!-- Древесные щепки -->
+                <td style="text-align:center">Древесные щепки</td>
+                <td style="text-align:center">112</td>
+                <td style="text-align:center">9:20:00</td>
+                <td style="text-align:center">7</td>
+                <td style="text-align:center">93.4%</td>
+            </tr>
+            <tr> <!-- Уголь -->
+                <td style="text-align:center">Уголь</td>
+                <td style="text-align:center">56</td>
+                <td style="text-align:center">9:20:00</td>
+                <td style="text-align:center">7</td>
+                <td style="text-align:center">93.4%</td>
+            </tr>
+            <tr> <!-- Топливо низкого качества -->
+                <td style="text-align:center">Топливо низкого качества</td>
+                <td style="text-align:center">56</td>
+                <td style="text-align:center">9:20:00</td>
+                <td style="text-align:center">7</td>
+                <td style="text-align:center">93.4%</td>
+            </tr>
+            <tr> <!-- Обычное топливо -->
+                <td style="text-align:center">Обычное топливо</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+                <td style="text-align:center">Нет данных</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Подтвержденные значения отмечены значком ✅.<br>Если рядом с информацией вы видите галочку, это означает, что она проверена и достоверна.</p>
 </body>
 </html>
