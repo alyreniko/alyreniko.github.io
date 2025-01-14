@@ -10,11 +10,21 @@
             font-family: Arial, sans-serif;
             color: #fff;
             margin: 20px;
-            text-align: center; /* Центровка текста всего сайта */
+            text-align: center;
         }
-    
+
+        h3, p {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        p {
+            color: #50505f;
+        }
+
         table {
-            width: 50%;
+            width: 90%;
+            max-width: 600px;
             margin: 0 auto;
             border-collapse: separate;
             border-spacing: 0;
@@ -24,47 +34,77 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             margin-bottom: 50px;
         }
-    
-        h3, p {
-            margin: 20px auto; /* Автоматический отступ по краям для выравнивания */
-            text-align: center; /* Центровка текста */
-        }
 
-        p {
-            color:#50505f;
-        }
-    
         th, td {
             padding: 15px 20px;
             text-align: center;
+            font-size: 16px;
         }
-    
+
         th {
             background-color: #404051;
             font-size: 16px;
         }
-    
+
         tr:nth-child(even) {
             background-color: #303040;
         }
-    
+
         tr:nth-child(odd) {
             background-color: #262635;
         }
-    
+
         tr:hover {
             background-color: #50505f;
             transition: background-color 0.3s;
         }
-    
+
         th:first-child, td:first-child {
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
         }
-    
+
         th:last-child, td:last-child {
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                font-size: 12px;
+                padding: 8px 10px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                font-size: 12px;
+                padding: 8px 8px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
