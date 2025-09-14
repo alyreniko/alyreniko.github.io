@@ -19,16 +19,17 @@ body {
     color: var(--text-color);
     font-family: var(--font-family);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .page {
     width: 100%;
-    max-width: 1400px;
 }
 
 .hero {
@@ -94,7 +95,7 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: flex;
     bottom: 0px;
     padding: 20px;
     text-align: center;
@@ -127,8 +128,8 @@ body {
 }
 
 .crime-banner {
-    position: absolute;
-    top: 25px;
+    position: flex;
+    margin-top: 25px;
     width: 100%;
     padding: 15px 0;
     flex-wrap: nowrap;
