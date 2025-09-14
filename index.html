@@ -1,56 +1,108 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт в разработке</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0d1117;
-            color: #c9d1d9;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Diyor Haydarov — UX/UI + Dev</title>
+        <link rel="stylesheet" href="style.css" />
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const langBtns = document.querySelectorAll(".lang-btn");
+                const ruElements = document.querySelectorAll(".ru");
+                const enElements = document.querySelectorAll(".en");
 
-        .container {
-            max-width: 600px;
-            padding: 20px;
-        }
+                function setLang(lang) {
+                    ruElements.forEach(
+                        (el) =>
+                            (el.style.display =
+                                lang === "ru" ? "block" : "none"),
+                    );
+                    enElements.forEach(
+                        (el) =>
+                            (el.style.display =
+                                lang === "en" ? "block" : "none"),
+                    );
+                    localStorage.setItem("siteLang", lang);
+                }
 
-        h1 {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #58a6ff;
-            margin-bottom: 20px;
-        }
+                let savedLang = localStorage.getItem("siteLang");
+                if (!savedLang) {
+                    savedLang = (
+                        navigator.language || navigator.userLanguage
+                    ).startsWith("ru")
+                        ? "ru"
+                        : "en";
+                }
+                setLang(savedLang);
 
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
+                langBtns.forEach((btn) => {
+                    btn.addEventListener("click", () => {
+                        setLang(btn.dataset.lang);
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="crime-banner ru">
+            САЙТ НА ЭТАПЕ РАЗРАБОТКИ
+            <a href="https://github.com/alyreniko/alyreniko.github.io/tree/dev"
+                >GITHUB</a
+            >
+        </div>
 
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2em;
-            }
-            p {
-                font-size: 1em;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>В разработке...</h1>
-        <p>Привет! 👋 Ты попал на мой личный уголок в сети.<br>
-        Пока тут пустовато, но скоро появится что-то интересное.<br>
-        Загляни позже — будет круто!</p>
-    </div>
-</body>
+        <div class="crime-banner en">
+            WEBSITE UNDER DEVELOPMENT
+            <a href="https://github.com/alyreniko/alyreniko.github.io/tree/dev"
+                >GITHUB</a
+            >
+        </div>
+
+        <main class="page">
+            <section class="hero">
+                <div class="logo">
+                    <div class="logo__inner">
+                        <h1 class="logo__pseudo">ALYRENIKO</h1>
+                        <h2 class="logo__name ru">Диёр Хайдаров</h2>
+                        <h2 class="logo__name en">Diyor Haydarov</h2>
+                    </div>
+                </div>
+                <div class="hero__description">
+                    <p>UX/UI + Dev | Digital Creator</p>
+                </div>
+            </section>
+
+            <nav class="nav">
+                <a href="https://t.me/alyreniko">Telegram</a>
+                <a href="https://instagram.com/alyreniko">Instagram*</a>
+                <a href="https://dribbble.com/alyreniko">Dribbble</a>
+                <a href="https://www.behance.net/alyreniko">Behance</a>
+                <a href="https://www.facebook.com/alyreniko">Facebook*</a>
+            </nav>
+        </main>
+        <footer class="footer">
+            <div class="footer__lang">
+                <button class="lang-btn" data-lang="ru">RU</button> |
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+
+            <div class="footer__content ru">
+                <p>© 2025 Диёр Хайдаров (alyreniko). Все права защищены.</p>
+                <p class="footer__note">
+                    *Instagram и Facebook принадлежат компании Meta, которая
+                    признана экстремистской организацией и запрещена на
+                    территории РФ.
+                </p>
+            </div>
+
+            <div class="footer__content en">
+                <p>© 2025 Diyor Haydarov (alyreniko). All rights reserved.</p>
+                <p class="footer__note">
+                    *Instagram and Facebook are owned by Meta, a company
+                    recognized as an extremist organization and banned in the
+                    territory of the Russian Federation.
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>
