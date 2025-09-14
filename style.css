@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --bg-color: #0e1014;
+    --text-color: white;
+    --border-color: #c8c8c8;
+    --font-family: "Montserrat", sans-serif;
+    --link-spacing: 0.8em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1117;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.page {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 305px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    padding: var(--link-spacing) 0;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.logo__inner {
+    z-index: 1;
+}
+
+.logo__pseudo {
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 700;
+    margin: 0;
+}
+
+.logo__name {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 10px 0 0;
+}
+
+.hero__description p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+.footer__note {
+    font-size: 12px;
+    color: #777;
+    margin-top: 8px;
+}
+
+.footer__lang {
+    margin-bottom: 12px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.lang-btn:hover {
+    opacity: 0.7;
+}
+
+.crime-banner {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    padding: 15px 0;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transform: rotate(-2deg);
+    z-index: 10000;
+    color: #000;
+}
+
+.crime-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        #ffea00,
+        #ffea00 20px,
+        #000 20px,
+        #000 40px
+    );
+    z-index: -2;
+}
+
+.crime-banner::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #ffea00;
+    z-index: -1;
+}
+
+.crime-banner a {
+    color: #0969da;
+}
+
+/* HOVER */
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    padding: var(--link-spacing) 0;
+    position: relative;
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    transition: width 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    padding: var(--link-spacing) 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    white-space: nowrap;
+    overflow: visible;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    letter-spacing: 0.02em;
+    margin: 0 8px;
+}
+
+.nav a:hover {
+    letter-spacing: 0.18em;
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.5),
+        0 0 12px rgba(255, 255, 255, 0.3),
+        0 0 20px rgba(255, 255, 255, 0.2);
+    transform: translateX(4px);
+    transition: 1.5s ease;
+}
+
+.logo__pseudo,
+.logo__name {
+    transition:
+        letter-spacing 0.3s ease,
+        transform 0.3s ease;
+}
+
+.logo:hover .logo__pseudo {
+    letter-spacing: 0.1em;
+    transform: scale(1.02);
+}
+
+.logo:hover .logo__name {
+    letter-spacing: 0.05em;
+    transform: scale(1.01);
+}
