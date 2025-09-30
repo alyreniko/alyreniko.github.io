@@ -1,9 +1,111 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
+        <title>
+            Diyor Haydarov (alyreniko) – UI/UX Designer & Frontend Developer
+        </title>
+        <meta
+            name="description"
+            content="Diyor Haydarov (alyreniko) – UI/UX Designer & Frontend Developer. I design clean interfaces, build scalable front-end, create design systems & prototypes."
+        />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href="https://alyreniko.page/" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>Мои соцсети</title>
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta
+            property="og:title"
+            content="Diyor Haydarov (alyreniko) – UI/UX Designer & Frontend Developer"
+        />
+        <meta
+            property="og:description"
+            content="UI/UX design, front-end development, design systems, prototypes. Portfolio of alyreniko (Diyor Haydarov)."
+        />
+        <meta property="og:url" content="https://alyreniko.page/" />
+        <meta
+            property="og:image"
+            content="https://alyreniko.page/og-cover.png"
+        />
+        <meta
+            property="og:image:alt"
+            content="Brand banner of Diyor Haydarov (alyreniko)"
+        />
+        <meta property="og:site_name" content="alyreniko" />
+
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Diyor Haydarov (alyreniko) – UI/UX Designer & Frontend Developer"
+        />
+        <meta
+            name="twitter:description"
+            content="UI/UX design, front-end development, design systems, prototypes."
+        />
+        <meta
+            name="twitter:image"
+            content="https://alyreniko.page/og-cover.png"
+        />
+
+        <meta name="theme-color" content="#BF4040" />
+        <meta name="color-scheme" content="light dark" />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="alyreniko" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+
+        <!-- JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "@id": "https://alyreniko.page/#person",
+                "name": "Diyor Haydarov",
+                "alternateName": ["alyreniko", "Диёр Хайдаров"],
+                "url": "https://alyreniko.page/",
+                "image": "https://alyreniko.page/avatar.jpg",
+                "jobTitle": "UI/UX Designer & Frontend Developer",
+                "description": "UI/UX design, front-end development, design systems, prototypes, interface optimization.",
+                "knowsAbout": [
+                    "UI/UX design",
+                    "Interface design",
+                    "Design systems",
+                    "Prototyping",
+                    "Frontend development",
+                    "JavaScript",
+                    "CSS",
+                    "HTML",
+                    "Vue.js",
+                    "Performance optimization",
+                    "Accessibility"
+                ],
+                "sameAs": ["https://github.com/alyreniko"],
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Novosibirsk",
+                    "addressCountry": "RU"
+                }
+            }
+        </script>
 
         <!-- Fonts -->
         <link
@@ -30,12 +132,32 @@
                 --bg: #f2f4f5;
                 --card: #fff;
                 --accent: #3b4d61;
-                --accent-dark: #bb4040;
+                --accent-dark: #bf4040;
                 --muted: #7c8a92;
                 --shadow: rgba(0, 0, 0, 0.07);
                 --border: rgba(0, 0, 0, 0.08);
                 --hover-bg: rgba(59, 77, 97, 0.08);
+                --page-padding: 36px;
+                --main-margin-top: 48px;
+                --main-margin-bottom: 56px;
             }
+
+            @media (max-width: 640px) {
+                :root {
+                    --page-padding: 18px;
+                    --main-margin-top: 28px;
+                    --main-margin-bottom: 36px;
+                }
+            }
+
+            @media (max-width: 420px) {
+                :root {
+                    --page-padding: 14px;
+                    --main-margin-top: 22px;
+                    --main-margin-bottom: 30px;
+                }
+            }
+
             body.dark-theme {
                 --bg: #0f1418;
                 --card: #1b232a;
@@ -47,13 +169,15 @@
                 --hover-bg: rgba(155, 179, 199, 0.12);
                 color: #e9edf0;
             }
+
             * {
                 box-sizing: border-box;
             }
-            html,
-            body {
+
+            html {
                 height: 100%;
             }
+
             body {
                 margin: 0;
                 font-family: "Rubik", sans-serif;
@@ -64,13 +188,23 @@
                     rgba(59, 77, 97, 0.05),
                     transparent
                 );
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 36px;
+                display: block;
+                min-height: 100dvh;
+                padding: var(--page-padding);
                 transition:
                     background 0.3s,
                     color 0.3s;
+                -webkit-text-size-adjust: 100%;
+            }
+
+            @media (max-width: 340px) {
+                body {
+                    font-size: 15px;
+                }
+            }
+
+            main {
+                margin: var(--main-margin-top) auto var(--main-margin-bottom);
             }
         </style>
     </head>
@@ -137,7 +271,7 @@
                     class="text-[13px] text-[var(--muted)] hover:text-[var(--accent-dark)] transition-colors"
                     target="_blank"
                     href="https://github.com/alyreniko/alyreniko.github.io"
-                    >⚠️ Сайт в разработке</a
+                    >⚠️ Website under development</a
                 >
                 <div class="text-[var(--muted)]">Made with ✨</div>
             </footer>
