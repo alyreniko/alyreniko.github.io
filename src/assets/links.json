@@ -1,0 +1,32 @@
+[
+  {
+    "title": "GitHub",
+    "subtitle": "@alyreniko",
+    "icon": "fa-brands fa-github",
+    "url": "https://github.com/alyreniko"
+  },
+  {
+    "title": "Telegram",
+    "subtitle": "@alyreniko",
+    "icon": "fa-brands fa-telegram",
+    "url": "https://t.me/alyreniko"
+  },
+  {
+    "title": "Behance",
+    "subtitle": "@alyreniko",
+    "icon": "fa-brands fa-behance fa-sm",
+    "url": "https://www.behance.net/alyreniko"
+  },
+  {
+    "title": "LinkedIn",
+    "subtitle": "@alyreniko",
+    "icon": "fa-brands fa-linkedin-in",
+    "url": "https://www.linkedin.com/in/alyreniko/"
+  },
+  {
+    "title": "Mail",
+    "subtitle": "alyreniko@gmail.com",
+    "icon": "fa-solid fa-envelope fa-sm",
+    "url": "mailto:alyreniko@gmail.com"
+  }
+]
