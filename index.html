@@ -116,20 +116,32 @@
 
         <!-- Fonts -->
         <link
+            rel="preload"
+            as="style"
             href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&family=Rubik:wght@300..900&display=swap"
-            rel="stylesheet"
+            onload="this.rel='stylesheet'"
         />
-
-        <!-- Tailwind -->
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <noscript
+            ><link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&family=Rubik:wght@300..900&display=swap"
+        /></noscript>
 
         <!-- Font Awesome -->
         <link
-            rel="stylesheet"
+            rel="preload"
+            as="style"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
+            onload="this.rel='stylesheet'"
         />
+        <noscript
+            ><link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        /></noscript>
+
+        <!-- Tailwind -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
         <!-- Vue -->
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
