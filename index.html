@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            Diyor Haydarov (alyreniko) – UI/UX Designer & Frontend Developer
+        </title>
+        <meta
+            name="description"
+            content="Diyor Haydarov (alyreniko) – UI/UX Designer & Frontend Developer. I design clean interfaces, build scalable front-end, create design systems & prototypes."
+        />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href="https://alyreniko.page/" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta
+            property="og:title"
+            content="Diyor Haydarov (alyreniko) – UI/UX Designer & Frontend Developer"
+        />
+        <meta
+            property="og:description"
+            content="UI/UX design, front-end development, design systems, prototypes. Portfolio of alyreniko (Diyor Haydarov)."
+        />
+        <meta property="og:url" content="https://alyreniko.page/" />
+        <meta
+            property="og:image"
+            content="https://alyreniko.page/og-cover.png"
+        />
+        <meta
+            property="og:image:alt"
+            content="Brand banner of Diyor Haydarov (alyreniko)"
+        />
+        <meta property="og:site_name" content="alyreniko" />
+
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Diyor Haydarov (alyreniko) – UI/UX Designer & Frontend Developer"
+        />
+        <meta
+            name="twitter:description"
+            content="UI/UX design, front-end development, design systems, prototypes."
+        />
+        <meta
+            name="twitter:image"
+            content="https://alyreniko.page/og-cover.png"
+        />
+
+        <meta name="theme-color" content="#BF4040" />
+        <meta name="color-scheme" content="light dark" />
+
+        <!-- Favicon -->
+        <!-- Favicon для Google и большинства браузеров -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <!-- Дополнительные форматы для современных браузеров -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+
+        <!-- Apple iOS -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon.png"
+        />
+
+        <!-- Apple iOS и PWA: название приложения и манифест -->
+        <meta name="apple-mobile-web-app-title" content="alyreniko" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+
+        <!-- JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "@id": "https://alyreniko.page/#person",
+                "name": "Diyor Haydarov",
+                "alternateName": ["alyreniko", "Диёр Хайдаров"],
+                "url": "https://alyreniko.page/",
+                "image": "https://alyreniko.page/avatar.jpg",
+                "jobTitle": "UI/UX Designer & Frontend Developer",
+                "description": "UI/UX design, front-end development, design systems, prototypes, interface optimization.",
+                "knowsAbout": [
+                    "UI/UX design",
+                    "Interface design",
+                    "Design systems",
+                    "Prototyping",
+                    "Frontend development",
+                    "JavaScript",
+                    "CSS",
+                    "HTML",
+                    "Vue.js",
+                    "Performance optimization",
+                    "Accessibility"
+                ],
+                "sameAs": ["https://github.com/alyreniko"],
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Novosibirsk",
+                    "addressCountry": "RU"
+                }
+            }
+        </script>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&family=Rubik:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            :root {
+                --bg: #f2f4f5;
+                --card: #ffffff;
+                --accent: #3b4d61;
+                --text-color: #333;
+                --accent-dark: #bf4040;
+                --muted: #7c8a92;
+                --shadow: rgba(0, 0, 0, 0.07);
+                --border: rgba(0, 0, 0, 0.08);
+                --hover-bg: rgba(59, 77, 97, 0.08);
+                --page-padding: 36px;
+                --main-margin-top: 48px;
+                --main-margin-bottom: 56px;
+            }
+
+            @media (max-width: 640px) {
+                :root {
+                    --page-padding: 18px;
+                    --main-margin-top: 28px;
+                    --main-margin-bottom: 36px;
+                }
+            }
+            @media (max-width: 420px) {
+                :root {
+                    --page-padding: 14px;
+                    --main-margin-top: 22px;
+                    --main-margin-bottom: 30px;
+                }
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --bg: #0f1418;
+                    --card: #1b232a;
+                    --accent: #4d6b88;
+                    --text-color: #ddd;
+                    --accent-dark: #bb4040;
+                    --muted: #a0aeb9;
+                    --shadow: rgba(0, 0, 0, 0.5);
+                    --border: rgba(255, 255, 255, 0.12);
+                    --hover-bg: rgba(155, 179, 199, 0.12);
+                }
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                font-family:
+                    "Rubik",
+                    system-ui,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Arial,
+                    sans-serif;
+                color: #222;
+                background: var(--bg);
+                background-image: radial-gradient(
+                    800px 600px at 20% 20%,
+                    rgba(59, 77, 97, 0.05),
+                    transparent
+                );
+                min-height: 100dvh;
+                padding: var(--page-padding);
+                -webkit-text-size-adjust: 100%;
+            }
+
+            @media (max-width: 340px) {
+                body {
+                    font-size: 15px;
+                }
+            }
+
+            main {
+                margin: var(--main-margin-top) auto var(--main-margin-bottom);
+                width: 100%;
+                max-width: 600px;
+                background: var(--card);
+                border: 1px solid var(--border);
+                border-radius: 18px;
+                padding: 36px;
+                box-shadow: 0 10px 30px var(--shadow);
+                transition:
+                    background 0.3s,
+                    color 0.3s,
+                    border-color 0.3s;
+            }
+            @media (max-width: 520px) {
+                main {
+                    padding: 24px;
+                }
+            }
+
+            header {
+                text-align: center;
+                margin-bottom: 24px;
+                position: relative;
+            }
+
+            .avatar {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+                margin: 0 auto 16px;
+                background: center / cover no-repeat;
+            }
+            @media (max-width: 520px) {
+                .avatar {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            h1 {
+                margin: 0;
+                font-family: "Lexend", sans-serif;
+                font-size: 26px;
+                color: var(--accent-dark);
+            }
+            @media (max-width: 520px) {
+                h1 {
+                    font-size: 22px;
+                }
+            }
+
+            .alias {
+                margin: 4px 0 0;
+                font-size: 15px;
+                color: var(--muted);
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 20px 0 0;
+                padding: 0;
+                display: grid;
+                gap: 10px;
+            }
+
+            .link-card {
+                --radius: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px 16px;
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                text-decoration: none;
+                color: inherit;
+                background: transparent;
+                transition:
+                    background 0.25s,
+                    transform 0.25s,
+                    border-color 0.25s;
+                will-change: transform;
+            }
+            .link-card:focus-visible {
+                outline: 2px solid var(--accent-dark);
+                outline-offset: 2px;
+            }
+            .link-card:hover {
+                background: var(--hover-bg);
+                transform: translateY(-2px);
+            }
+            .link-card:active {
+                transform: translateY(0);
+            }
+
+            .link-icon {
+                width: 34px;
+                height: 34px;
+                border-radius: 8px;
+                background: var(--accent);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                flex-shrink: 0;
+                transition: background 0.25s;
+            }
+            .link-card:hover .link-icon {
+                background: var(--accent-dark);
+            }
+
+            .link-text {
+                display: flex;
+                flex-direction: column;
+                line-height: 1.2;
+            }
+            .link-title {
+                color: var(--text-color);
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .link-sub {
+                font-size: 12px;
+                color: var(--muted);
+            }
+
+            footer {
+                margin-top: 32px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+                font-size: 13px;
+                color: var(--muted);
+            }
+            footer a {
+                color: var(--muted);
+                text-decoration: none;
+                transition: color 0.25s;
+            }
+            footer a:hover {
+                color: var(--accent-dark);
+            }
+        </style>
+      <script type="module" crossorigin src="/assets/index-Dm_Qo6nT.js"></script>
+    </head>
+    <body>
+        <main role="main">
+            <header>
+                <div
+                    class="avatar"
+                    style="
+                        background-image: url(https://avatars.githubusercontent.com/u/125800147);
+                    "
+                    aria-hidden="true"
+                ></div>
+                <h1>ALYRENIKO</h1>
+                <p class="alias">Diyor Haydarov</p>
+            </header>
+
+            <nav id="nav-links"></nav>
+
+            <footer>
+                <a
+                    href="https://github.com/alyreniko/alyreniko.github.io"
+                    target="_blank"
+                    rel="noopener"
+                    >⚠️ Website under development</a
+                >
+                <div>Made with ✨</div>
+            </footer>
+        </main>
+    </body>
+</html>
