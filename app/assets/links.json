@@ -2,31 +2,31 @@
   {
     "title": "GitHub",
     "subtitle": "@alyreniko",
-    "icon": "fa-brands fa-github",
+    "icon": "cib:github",
     "url": "https://github.com/alyreniko"
   },
   {
     "title": "Telegram",
     "subtitle": "@alyreniko",
-    "icon": "fa-brands fa-telegram",
+    "icon": "cib:telegram",
     "url": "https://t.me/alyreniko"
   },
   {
     "title": "Behance",
     "subtitle": "@alyreniko",
-    "icon": "fa-brands fa-behance fa-sm",
+    "icon": "cib:behance",
     "url": "https://www.behance.net/alyreniko"
   },
   {
     "title": "LinkedIn",
     "subtitle": "@alyreniko",
-    "icon": "fa-brands fa-linkedin-in",
+    "icon": "cib:linkedin",
     "url": "https://www.linkedin.com/in/alyreniko/"
   },
   {
     "title": "Mail",
     "subtitle": "alyreniko@gmail.com",
-    "icon": "fa-solid fa-envelope fa-sm",
+    "icon": "material-symbols:mail-rounded",
     "url": "mailto:alyreniko@gmail.com"
   }
 ]
