@@ -1,0 +1,19 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 💬 Обратная связь
+    url: https://alyreniko.github.io/#contact
+    about: Используй форму на сайте, если хочешь просто связаться или написать сообщение.
+
+issue_template:
+  - name: 🐞 Bug Report
+    description: Сообщить об ошибке или баге на сайте
+    title: "fix: "
+    labels: ["bug"]
+    template: bug_report.md
+
+  - name: ✨ Feature Request
+    description: Предложить новую идею, компонент или улучшение
+    title: "feat: "
+    labels: ["enhancement"]
+    template: feature_request.md
