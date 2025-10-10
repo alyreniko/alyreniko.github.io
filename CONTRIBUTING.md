@@ -47,10 +47,12 @@
 
 ### Примеры:
 
+```
 main
 ├── feature/hero-section
 ├── feature/projects-grid
 └── fix/responsive-header
+```
 
 ### Правила:
 
