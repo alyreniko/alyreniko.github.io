@@ -1,9 +1,7 @@
 name: "🧩 Pull Request"
 description: "Запрос на внесение изменений."
 title: ""
-# Можно настроить дефолтные метки/ассайни при желании:
-# labels: ["needs review"]
-# assignees: ["alyreniko"]
+assignees: ["alyreniko"]
 body:
   - type: markdown
     attributes:
