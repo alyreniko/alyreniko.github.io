@@ -1,0 +1,94 @@
+name: "🐞 Bug Report"
+description: "Сообщить об ошибке или проблеме в проекте"
+title: "fix: "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что сообщаете об ошибке! Пожалуйста, заполните поля ниже максимально подробно.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "🧩 Описание проблемы"
+      description: "Опишите, что пошло не так. Добавьте скриншоты или видео, если возможно."
+      placeholder: "Форма обратной связи не отправляет сообщение при пустом поле email."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "🔁 Шаги для воспроизведения"
+      description: "Перечислите шаги, которые приводят к ошибке."
+      placeholder: |
+        1) Открыть страницу «Контакты»
+        2) Оставить пустое поле email
+        3) Нажать «Отправить»
+        4) Ошибка в консоли
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "⚙️ Ожидаемое поведение"
+      description: "Что должно происходить вместо этого?"
+      placeholder: "Сообщение успешно отправляется, показывается уведомление об успехе."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: "💻 Операционная система"
+      options:
+        - "Windows"
+        - "macOS"
+        - "Linux"
+        - "Android"
+        - "iOS"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: "🌐 Браузеры"
+      description: "Где наблюдается проблема?"
+      multiple: true
+      options:
+        - "Chrome"
+        - "Firefox"
+        - "Safari"
+        - "Microsoft Edge"
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: "Версия проекта"
+      placeholder: "например, 1.0.3 или commit sha"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "📄 Логи / консоль"
+      description: "Вставьте релевантные логи/стек-трейсы. Они автоматически отформатируются как код."
+      render: shell
+      placeholder: "Сообщения ошибок из консоли браузера или сервера"
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: "📎 Дополнительно"
+      description: "Любая дополнительная информация, ссылки, скриншоты, devtools и т.п."
+    validations:
+      required: false
