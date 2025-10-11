@@ -51,6 +51,10 @@
     0 6px 10px hsla(0, 0%, 0%, 0.08);
 }
 
+body {
+  background-color: var(--color-layer0);
+}
+
 * {
   color: var(--color-text-primary);
 }
