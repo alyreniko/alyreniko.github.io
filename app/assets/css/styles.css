@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-layer0: hsl(0, 0%, 5%);
+  --color-layer1: hsl(0, 0%, 10%);
+  --color-layer2: hsl(0, 0%, 15%);
+
+  --color-button: hsl(0, 0%, 25%);
+  --color-button-border: hsl(0, 0%, 30%);
+
+  --color-button-hover: #77c4e9;
+  --color-button-hover-border: #1c80b0;
+
+  --color-accent-primary: hsl(0, 50%, 50%);
+  --color-accent-secondary: hsl(0, 49%, 19%);
+
+  --color-text-primary: hsl(0, 0%, 90%);
+  --color-text-secondary: hsl(0, 0%, 70%);
+  --color-text-tertiary: hsl(0, 0%, 30%);
+
+  --size-text-xs: 12px;
+  --size-text-s: 14px;
+  --size-text-m: 16px;
+
+  --color-text-background: hsla(0, 0%, 40%, 0.5);
+
+  --color-error: hsl(0, 100%, 70%);
+
+  --color-skill-strong: #2ecc71;
+  --color-skill-mid: #ffb020;
+  --color-skill-basic: #6c7a89;
+
+  --size-xxs: 8px;
+  --size-xs: 12px;
+  --size-s: 16px;
+  --size-m: 20px;
+  --size-l: 24px;
+  --size-xl: 28px;
+  --size-xxl: 32px;
+
+  --shadow-s:
+    inset 0 1px 2px hsla(0, 0%, 100%, 0.19), 0 1px 2px hsla(0, 0%, 0%, 0.19),
+    0 2px 4px hsla(0, 0%, 0%, 0.08);
+  --shadow-m:
+    inset 0 1px 2px hsla(0, 0%, 100%, 0.32), 0 2px 4px hsla(0, 0%, 0%, 0.19),
+    0 4px 8px hsla(0, 0%, 0%, 0.08);
+  --shadow-l:
+    inset 0 1px 2px hsla(0, 0%, 100%, 0.44), 0 4px 6px hsla(0, 0%, 0%, 0.19),
+    0 6px 10px hsla(0, 0%, 0%, 0.08);
+}
+
+* {
+  color: var(--color-text-primary);
+}
+
+.btn {
+  background-color: var(--color-button);
+  border: 1px solid var(--color-button-border);
+  box-shadow: var(--shadow-l);
+  &:hover {
+    background-color: var(--color-button-hover);
+    border-color: var(--color-button-hover-border);
+    box-shadow: var(--shadow-m);
+    > * {
+      color: var(--color-button-hover-border);
+    }
+  }
+  &:active {
+    background-color: var(--color-button-hover-border);
+    border-color: var(--color-button-hover);
+    box-shadow: var(--shadow-s);
+    > * {
+      color: var(--color-button-hover);
+    }
+  }
+}
