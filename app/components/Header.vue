@@ -1,18 +1,23 @@
 <template>
-  <header class="flex justify-center items-center gap-8 fixed top-4 w-screen">
+  <header class="flex justify-center items-center gap-8 fixed top-4 w-screen z-50">
     <a class="btn px-6 py-3 rounded-xl header__link" href="/blog">Blog</a>
     <a class="btn px-6 py-3 rounded-xl header__link" href="#projects">Projects</a>
-    <a href="/"><img class="btn px-6 py-2 rounded-xl header__link" src="/logo.svg" alt="SiteName logo" /></a>
+    <a href="/">
+      <img class="btn px-6 py-2 rounded-xl header__link" src="/logo.svg" alt="SiteName logo" />
+    </a>
     <a class="btn px-6 py-3 rounded-xl header__link" href="#about">About me</a>
     <a class="btn px-6 py-3 rounded-xl header__link" href="#contact">Contact</a>
   </header>
 </template>
 
 <style>
-.header__link:hover {
-  color: var(--color-accent-secondary);
-  background-color: var(--color-accent-primary);
-  border-color: var(--color-accent-secondary);
+.header__link {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--color-accent-secondary);
+    background-color: var(--color-accent-primary);
+    border-color: var(--color-accent-secondary);
+  }
   &:active {
     color: var(--color-accent-primary);
     background-color: var(--color-accent-secondary);

@@ -52,7 +52,6 @@
 }
 
 * {
-  transition: all 0.3s ease-in-out;
   color: var(--color-text-primary);
 }
 
