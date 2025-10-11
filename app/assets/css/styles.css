@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -52,7 +54,39 @@
 }
 
 * {
+  font-family: 'Inter', sans-serif;
   color: var(--color-text-primary);
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  background-color: var(--color-layer0);
+}
+
+.block-layer1 {
+  background-color: var(--color-layer1);
+  padding: 1.25rem; /* 20px */
+  box-shadow: var(--shadow-s);
+  border-radius: 1.75rem; /* 24px */
+}
+
+.block-layer2 {
+  background-color: var(--color-layer2);
+  padding: 1.25rem; /* 20px */
+  box-shadow: var(--shadow-m);
+  border-radius: 1.25rem;
+}
+
+.btn,
+.btn > * {
+  transition: all 0.3s ease-in-out;
 }
 
 .btn {
@@ -63,6 +97,7 @@
     background-color: var(--color-button-hover);
     border-color: var(--color-button-hover-border);
     box-shadow: var(--shadow-m);
+    color: var(--color-button-hover-border);
     > * {
       color: var(--color-button-hover-border);
     }
@@ -71,6 +106,7 @@
     background-color: var(--color-button-hover-border);
     border-color: var(--color-button-hover);
     box-shadow: var(--shadow-s);
+    color: var(--color-button-hover-border);
     > * {
       color: var(--color-button-hover);
     }
