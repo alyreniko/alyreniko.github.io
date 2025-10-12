@@ -55,7 +55,7 @@
 
 * {
   font-family: 'Inter', sans-serif;
-  color: var(--color-text-primary);
+  color: hsl(0, 0%, 96%); /* neutral-100 */
 }
 
 img {
@@ -69,7 +69,7 @@ body {
 }
 
 .block-layer1 {
-  background-color: var(--color-layer1);
+  /*background-color: var(--color-layer1);*/
   padding: 1.25rem; /* 20px */
   box-shadow: var(--shadow-s);
   border-radius: 1.75rem; /* 24px */

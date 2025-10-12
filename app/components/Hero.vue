@@ -1,41 +1,25 @@
 <template>
   <div class="flex gap-10 overflow-x-hidden min-h-screen items-center justify-center">
-    <div class="block-layer1 flex flex-col gap-5">
-      <div class="block-layer2 inline-flex gap-5">
+    <div class="block-layer1 bg-neutral-900 flex flex-col gap-5">
+      <div class="block-layer2 bg-neutral-800 inline-flex gap-5">
         <div class="inline-table">
           <div class="table-caption">
-            <img
-              class="rounded-full"
-              src="https://alyreniko.page/avatar.webp?v=2025-10-11"
-              alt="Diyor Haydarov"
-            />
+            <img class="rounded-full" src="/avatar.webp" alt="Diyor Haydarov" draggable="false" />
           </div>
-          <h1 class="text-nowrap whitespace-nowrap mt-3">Diyor Haydarov</h1>
+          <h1 class="text-nowrap whitespace-nowrap mt-3 text-neutral-400">Diyor Haydarov</h1>
         </div>
         <ul class="flex flex-col justify-between">
-          <li class="inline-flex gap-2 items-center text-nowrap whitespace-nowrap">
-            <Icon name="fa7-solid:location-dot" class="w-4 h-4" />
-            Novosibirsk
-          </li>
-          <li class="inline-flex gap-2 items-center text-nowrap whitespace-nowrap">
-            <Icon name="fa7-solid:graduation-cap" class="w-4 h-4" />
-            Higher College at NSU
-          </li>
-          <li class="inline-flex gap-2 items-center text-nowrap whitespace-nowrap">
-            <Icon name="fa7-solid:book-atlas" class="w-4 h-4" />
-            UI / UX + Frontend Developer
-          </li>
-          <li class="inline-flex gap-2 items-center text-nowrap whitespace-nowrap">
-            <Icon name="fa7-solid:language" class="w-4 h-4" />
-            Native Russian & English B1
-          </li>
-          <li class="inline-flex gap-2 items-center text-nowrap whitespace-nowrap">
-            <Icon name="fa7-solid:birthday-cake" class="w-4 h-4" />
-            27 Feb 2007 [ 18 y.o. ]
+          <li
+            v-for="item in infoItems"
+            :key="item.id"
+            class="inline-flex gap-2 items-center text-nowrap whitespace-nowrap"
+          >
+            <Icon :name="item.icon" class="w-4 h-4" />
+            {{ item.text }}
           </li>
         </ul>
       </div>
-      <div class="block-layer2 inline-flex flex-col gap-4">
+      <div class="block-layer2 bg-neutral-800 inline-flex flex-col gap-4">
         <a
           v-for="(item, name) in links"
           :key="name"
@@ -44,13 +28,13 @@
           rel="noopener noreferrer"
           class="btn rounded-xl p-3 gap-2 flex items-center justify-start"
         >
-          <Icon :name="item.icon" class="h-8 w-8" />
+          <Icon :name="item.icon" class="h-8 w-8 text-neutral-100" />
           {{ name }}
         </a>
       </div>
     </div>
-    <div class="flex flex-col w-fit justify-between">
-      <h2 class="font-extrabold w-fit" style="font-size: 100px; color: var(--color-text-tertiary)">
+    <div class="flex flex-col">
+      <h2 class="font-extrabold w-fit text-[100px] text-neutral-600">
         Hi! I bring
         <span style="color: var(--color-accent-primary)">ideas</span>
         <br />
@@ -61,14 +45,57 @@
         <span style="color: #2dba4e">code</span>
         }
       </h2>
-      <div class="inline-flex flex-row gap-10 overflow-x-hidden">
-        <Icon v-for="icon in icons" :name="icon" class="h-20 w-20" />
+      <div class="inline-flex flex-row gap-10 overflow-x-hidden mt-10">
+        <Icon v-for="icon in icons" :key="icon" :name="icon" class="h-20 w-20" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue';
+
+const birthDate = new Date('2007-02-27').getTime();
+
+const age = computed(() => {
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDiff = today.getMonth() - birth.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+});
+
+const infoItems = [
+  {
+    id: 'location',
+    icon: 'fa7-solid:location-dot',
+    text: 'Novosibirsk',
+  },
+  {
+    id: 'education',
+    icon: 'fa7-solid:graduation-cap',
+    text: 'Higher College at NSU',
+  },
+  {
+    id: 'role',
+    icon: 'fa7-solid:book-atlas',
+    text: 'UI / UX + Frontend Developer',
+  },
+  {
+    id: 'language',
+    icon: 'fa7-solid:language',
+    text: 'Native Russian & English B1',
+  },
+  {
+    id: 'birthday',
+    icon: 'fa7-solid:birthday-cake',
+    text: `27 Feb 2007 [ ${age.value} y.o. ]`,
+  },
+];
+
 const links = {
   GitHub: {
     icon: 'streamline-logos:github-logo-1-block',
