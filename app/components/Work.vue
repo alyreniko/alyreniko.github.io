@@ -1,10 +1,14 @@
 <template>
-  <div class="flex flex-col min-h-screen gap-52 py-32">
-    <div class="flex gap-8">
+  <div class="flex flex-col w-full min-h-screen gap-52 py-32">
+    <!-- CODE SECTION -->
+    <div
+      class="relative grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-8 overlay-label"
+      data-label="CODE"
+    >
       <div
         v-for="(item, key) in codeWork"
         :key="key"
-        class="flex flex-col code__card block-layer2 bg-neutral-800 max-w-[420px] h-fit gap-4"
+        class="flex flex-col code__card block-layer2 bg-neutral-800 w-full h-fit gap-4"
       >
         <img draggable="false" class="aspect-[2/1] object-cover rounded-lg" :src="item.image" />
         <div class="text-neutral-200">
@@ -27,7 +31,11 @@
         </div>
       </div>
     </div>
-    <div class="flex gap-8">
+    <!-- DESIGN SECTION -->
+    <div
+      class="relative grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-8 overlay-label"
+      data-label="DESIGN"
+    >
       <div
         v-for="(item, key) in designWork"
         :key="key"
@@ -45,6 +53,23 @@
   </div>
 </template>
 
+<!-- STYLES -->
+<style scoped>
+.overlay-label::before {
+  content: attr(data-label);
+  font-weight: 800;
+  position: absolute;
+  top: -160px;
+  font-size: 180px;
+  z-index: -1;
+  width: 100%;
+  color: #222222;
+  pointer-events: none;
+  text-align: center;
+}
+</style>
+
+<!-- SCRIPTS -->
 <script setup>
 const iconMap = {
   github: 'streamline-logos:github-logo-1-block',
@@ -53,6 +78,30 @@ const iconMap = {
 
 const codeWork = {
   'Photo2Pixel Dithering': {
+    image: 'https://dummyimage.com/1200x600/444/aaa',
+    description:
+      'Pong in Python using This project is a Pygame - a simple and fun implementation of the classic arcade game for two players. This project is a great way to learn the basics of game great two development.',
+    tags: ['python', 'pygame'],
+    source: 'github',
+    url: 'https://github.com/alyreniko/pong_pygame',
+  },
+  'Ullamco aliqua': {
+    image: 'https://dummyimage.com/1200x600/444/aaa',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, exercitationem mollitia ducimus voluptates qui esse totam debitis ex officiis fuga quia tenetur libero expedita molestiae iste sequi quae incidunt possimus!',
+    tags: ['python', 'pygame'],
+    source: 'github',
+    url: 'https://github.com/alyreniko/pong_pygame',
+  },
+  'Lorem exercitation': {
+    image: 'https://dummyimage.com/1200x600/444/aaa',
+    description:
+      'Lorem ipsum dolor sit amet, deserunt exercitation veniam esse nostrud sed aute aliqua ad cupidatat sunt',
+    tags: ['python', 'pygame'],
+    source: 'github',
+    url: 'https://github.com/alyreniko/pong_pygame',
+  },
+  'Commodo ad': {
     image: 'https://dummyimage.com/1200x600/444/aaa',
     description:
       'Pong in Python using This project is a Pygame - a simple and fun implementation of the classic arcade game for two players. This project is a great way to learn the basics of game great two development.',
@@ -69,6 +118,7 @@ const codeWork = {
     url: 'https://github.com/alyreniko/pong_pygame',
   },
 };
+
 const designWork = {
   Design: {
     image: 'https://dummyimage.com/1200x1200/444/aaa',
