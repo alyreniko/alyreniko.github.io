@@ -39,7 +39,7 @@
       <div
         v-for="(item, key) in designWork"
         :key="key"
-        class="flex flex-col code__card block-layer2 bg-neutral-800 max-w-[420px] h-fit gap-4"
+        class="flex flex-col code__card block-layer2 bg-neutral-800 w-full h-fit gap-4"
       >
         <img draggable="false" class="aspect-[1/1] object-cover rounded-lg" :src="item.image" />
         <div class="flex flex-nowrap justify-between items-center">
