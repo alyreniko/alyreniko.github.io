@@ -26,7 +26,7 @@
           :href="item.url"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn rounded-xl p-3 gap-2 flex items-center justify-start"
+          class="btn rounded-xl p-3 gap-2 flex items-center justify-start font-medium"
         >
           <Icon :name="item.icon" class="h-8 w-8 text-neutral-100" />
           {{ name }}
