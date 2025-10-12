@@ -55,7 +55,7 @@
 
 * {
   font-family: 'Inter', sans-serif;
-  color: var(--color-text-primary);
+  color: hsl(0, 0%, 96%); /* neutral-100 */
 }
 
 img {
@@ -64,21 +64,19 @@ img {
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  align-content: center;
+  padding: 0 280px;
   background-color: var(--color-layer0);
 }
 
 .block-layer1 {
-  background-color: var(--color-layer1);
+  /*background-color: var(--color-layer1);*/
   padding: 1.25rem; /* 20px */
   box-shadow: var(--shadow-s);
   border-radius: 1.75rem; /* 24px */
 }
 
 .block-layer2 {
-  background-color: var(--color-layer2);
+  /*background-color: var(--color-layer2);*/
   padding: 1.25rem; /* 20px */
   box-shadow: var(--shadow-m);
   border-radius: 1.25rem;
