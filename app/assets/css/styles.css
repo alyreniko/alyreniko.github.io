@@ -76,7 +76,7 @@ body {
 }
 
 .block-layer2 {
-  background-color: var(--color-layer2);
+  /*background-color: var(--color-layer2);*/
   padding: 1.25rem; /* 20px */
   box-shadow: var(--shadow-m);
   border-radius: 1.25rem;
