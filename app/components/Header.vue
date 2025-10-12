@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-center items-center gap-8 fixed top-4 w-screen z-50">
+  <header class="flex justify-center items-center gap-8 fixed top-4 w-fit place-self-center z-50">
     <a class="btn px-6 py-3 rounded-xl header__link" href="/blog">Blog</a>
     <a class="btn px-6 py-3 rounded-xl header__link" href="#projects">Projects</a>
     <a class="btn px-6 py-2 rounded-xl header__link" href="/">
