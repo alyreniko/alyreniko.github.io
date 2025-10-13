@@ -1,25 +1,39 @@
 <template>
-  <div class="block-layer1 bg-neutral-900">
-    <p class="deep relative explain">
-      “Deep knowledge” - I know this well and have worked with it extensively.
-    </p>
-    <p class="practic relative explain">
-      “Practical experience” - I have some knowledge and practical experience.
-    </p>
-    <p class="basic relative explain">
-      “Basic experience” - I know little, but I had some experience.
-    </p>
-  </div>
-  <div class="block-layer1 relative skill-block mb-10 bg-neutral-900">
-    <div class="w-1/2">
-      <p
-        v-for="(level, name) in skills"
-        :key="name"
-        :class="[level]"
-        class="relative explain skill"
-      >
-        {{ name }}
+  <div class="w-fit">
+    <div class="block-layer1 bg-neutral-900 mb-8">
+      <p class="deep relative explain text-neutral-400 text-sm">
+        “Deep knowledge” - I know this well and have worked with it extensively.
       </p>
+      <p class="practic relative explain text-neutral-400 text-sm">
+        “Practical experience” - I have some knowledge and practical experience.
+      </p>
+      <p class="basic relative explain text-neutral-400 text-sm">
+        “Basic experience” - I know little, but I had some experience.
+      </p>
+    </div>
+    <div class="flex flex-row block-layer1 relative skill-block mb-10 bg-neutral-900">
+      <div class="w-1/2">
+        <p class="text-sm text-neutral-400 mb-3">In coding</p>
+        <p
+          v-for="(level, name) in skills_code"
+          :key="name"
+          :class="[level]"
+          class="relative explain skill"
+        >
+          {{ name }}
+        </p>
+      </div>
+      <div class="w-1/2">
+        <p class="text-sm text-neutral-400 mb-3">In design</p>
+        <p
+          v-for="(level, name) in skills_design"
+          :key="name"
+          :class="[level]"
+          class="relative explain skill"
+        >
+          {{ name }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -53,7 +67,7 @@
 </style>
 
 <script setup>
-const skills = {
+const skills_code = {
   Python: 'deep',
   pygame: 'deep',
   HTML: 'deep',
@@ -63,6 +77,10 @@ const skills = {
   CSS: 'practic',
   JavaScript: 'practic',
   Git: 'practic',
-  Vue: 'base',
+  Vue: 'basic',
+};
+
+const skills_design = {
+  Figma: 'practic',
 };
 </script>
