@@ -3,4 +3,5 @@
   <Hero />
   <Work />
   <About />
+  <Contact />
 </template>
