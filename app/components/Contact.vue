@@ -167,7 +167,7 @@ async function handleSubmit() {
     !isFilled('message') ||
     !isEmailValidWithLength.value
   ) {
-    message.value = { type: 'error', text: 'Пожалуйста, исправьте ошибки в форме.' };
+    message.value = { type: 'error', text: 'Please correct the errors in the form.' };
     return;
   }
 
@@ -203,11 +203,14 @@ async function handleSubmit() {
       touched.name = touched.email = touched.message = false;
       focused.name = focused.email = focused.message = false;
     } else {
-      throw new Error(result.message || 'Неизвестная ошибка');
+      throw new Error(result.message || 'Unknown error');
     }
   } catch (error) {
-    console.error('Ошибка отправки:', error);
-    message.value = { type: 'error', text: 'Не удалось отправить сообщение. Попробуйте позже.' };
+    console.error('Sending error:', error);
+    message.value = {
+      type: 'error',
+      text: 'The message could not be sent. Please try again later.',
+    };
   } finally {
     loading.value = false;
   }
