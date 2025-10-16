@@ -91,7 +91,7 @@ body {
   background-color: var(--color-button);
   border: 1px solid var(--color-button-border);
   box-shadow: var(--shadow-l);
-  &:hover {
+  &:hover:not(:disabled) {
     background-color: var(--color-button-hover);
     border-color: var(--color-button-hover-border);
     box-shadow: var(--shadow-m);
@@ -100,7 +100,7 @@ body {
       color: var(--color-button-hover-border);
     }
   }
-  &:active {
+  &:active:not(:disabled) {
     background-color: var(--color-button-hover-border);
     border-color: var(--color-button-hover);
     box-shadow: var(--shadow-s);
@@ -108,5 +108,9 @@ body {
     > * {
       color: var(--color-button-hover);
     }
+  }
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 }
