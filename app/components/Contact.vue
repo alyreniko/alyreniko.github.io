@@ -196,7 +196,7 @@ async function handleSubmit() {
 
     const result = await response.json();
     if (result.status === 'success') {
-      message.value = { type: 'success', text: 'Спасибо за ваше сообщение! ✨' };
+      message.value = { type: 'success', text: 'Thank you for your message! ✨' };
       formData.name = '';
       formData.email = '';
       formData.message = '';
