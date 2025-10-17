@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-10 overflow-x-hidden min-h-screen items-center justify-center">
+  <div class="block-section flex gap-10 overflow-x-hidden min-h-screen items-center justify-center">
     <div class="block-layer1 bg-neutral-900 flex flex-col gap-5">
       <div class="block-layer2 bg-neutral-800 inline-flex gap-5">
         <div class="inline-table">
