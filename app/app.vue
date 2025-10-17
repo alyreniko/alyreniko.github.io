@@ -4,4 +4,5 @@
   <Work />
   <About />
   <Contact />
+  <Footer />
 </template>
