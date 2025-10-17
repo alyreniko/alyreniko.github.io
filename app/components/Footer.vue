@@ -3,27 +3,27 @@
     <p>© 2025 Diyor Haydarov (alyreniko). All rights reserved.</p>
     <p>
       The site is an open source project - repository on
-      <a class="link" href="">GitHub</a>
+      <a class="link" href="https://github.com/alyreniko/alyreniko.github.io">GitHub</a>
     </p>
     <p class="flex justify-center gap-1">
       Follow me on social media:
-      <a class="link" href="">LinkedIn</a>
+      <a class="link" href="https://linkedin.com/in/alyreniko">LinkedIn</a>
       |
-      <a class="link" href="">GitHub</a>
+      <a class="link" href="https://github.com/alyreniko">GitHub</a>
       |
-      <a class="link" href="">Behance</a>
+      <a class="link" href="https://behance.net/alyreniko">Behance</a>
       |
-      <a class="link" href="">Pinterest</a>
+      <a class="link" href="https://pinterest.com/alyreniko">Pinterest</a>
     </p>
     <p class="flex justify-center gap-1">
       Quick links:
-      <a class="link" href="">About_me</a>
+      <a class="link" href="#about">About_me</a>
       |
-      <a class="link" href="">Portfolio</a>
+      <a class="link" href="#projects">Portfolio</a>
       |
-      <a class="link" href="">Blog</a>
+      <a class="link" href="/blog">Blog</a>
       |
-      <a class="link" href="">Contact</a>
+      <a class="link" href="#contact">Contact</a>
     </p>
   </div>
 </template>
