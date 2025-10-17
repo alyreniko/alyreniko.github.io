@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="grid grid-cols-[1fr_minmax(0,28rem)_1fr] absolute left-0 w-[99vw] min-h-screen items-center justify-center"
-  >
+  <div class="grid grid-cols-[1fr_minmax(0,28rem)_1fr] min-h-screen items-center justify-center">
     <div class="bg-[url(/l-hand.png)] hands h-screen"></div>
 
     <form
