@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-full min-h-screen gap-52 py-32">
+  <div class="block-section flex flex-col min-h-screen gap-52 py-32">
     <!-- CODE SECTION -->
     <div
       class="relative grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-8 overlay-label"
