@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute w-full overflow-hidden">
+  <div class="absolute w-full overflow-hidden" area-hidden="true" role="presentation">
     <div class="overflow-hidden" :style="{ '--ticker-speed': speed + 's' }">
       <div class="line opacity-0 pointer-events-none">{{ word }}</div>
       <div class="line absolute animate-ticker-1">{{ word }}</div>
