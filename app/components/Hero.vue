@@ -1,8 +1,8 @@
 <template>
   <div
-    class="hero block-section flex gap-10 overflow-x-hidden min-h-screen items-center justify-center"
+    class="hero block-section flex flex-wrap gap-10 overflow-x-hidden min-h-screen items-center justify-center"
   >
-    <div class="block-layer1 bg-neutral-900 flex flex-col gap-5">
+    <div class="hero__desc__links block-layer1 bg-neutral-900 flex flex-col gap-5">
       <div class="hero__desc block-layer2 bg-neutral-800 inline-flex gap-5">
         <div class="inline-table">
           <div class="table-caption">
@@ -21,14 +21,14 @@
           </li>
         </ul>
       </div>
-      <div class="block-layer2 bg-neutral-800 inline-flex flex-col gap-4">
+      <div class="w-full block-layer2 bg-neutral-800 inline-flex flex-col gap-4 justify-between">
         <a
           v-for="(item, name) in links"
           :key="name"
           :href="item.url"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn rounded-xl p-3 gap-2 flex items-center justify-start font-medium"
+          class="btn rounded-xl p-3 gap-2 flex items-center justify-start font-medium pr-20"
         >
           <Icon :name="item.icon" class="h-8 w-8 text-neutral-100" />
           {{ name }}
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="tagblock flex flex-col">
-      <h2 class="tagblock__line font-extrabold w-fit text-[100px] text-neutral-600">
+      <h2 class="tagblock__line font-extrabold text-8xl text-neutral-600 text-wrap">
         Hi! I bring
         <span style="color: var(--color-accent-primary)">ideas</span>
         <br />
@@ -46,7 +46,7 @@
         and
         <span style="color: #2dba4e">{&nbspcode&nbsp}</span>
       </h2>
-      <div class="tagblock__icons inline-flex flex-row gap-10 overflow-x-hidden mt-10">
+      <div class="tagblock__icons flex flex-row gap-10 overflow-x-hidden mt-10">
         <Icon v-for="icon in icons" :key="icon" :name="icon" class="h-20 w-20" />
       </div>
     </div>

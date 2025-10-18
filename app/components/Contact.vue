@@ -1,5 +1,5 @@
 <template>
-  <RunningLine class="mt-32 -z-50" word="CONTACT ME" />
+  <RunningLine class="-z-50" word="CONTACT ME" />
   <div
     class="contact grid grid-cols-[1fr_minmax(0,28rem)_1fr] min-h-screen items-center justify-center"
   >

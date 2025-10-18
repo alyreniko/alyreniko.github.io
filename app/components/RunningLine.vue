@@ -20,7 +20,7 @@ const props = defineProps({
 const dynamicSpace = ref(props.space);
 
 const updateScreenSize = () => {
-  const isSmall = window.matchMedia('(max-width: 430px)').matches && props.word.length > 6;
+  const isSmall = window.matchMedia('(max-width: 768px)').matches && props.word.length > 6;
   dynamicSpace.value = props.space + (isSmall ? 230 : 0);
 };
 
