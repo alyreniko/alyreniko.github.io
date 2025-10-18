@@ -1,6 +1,8 @@
 <template>
   <RunningLine class="mt-32 -z-50" word="CONTACT ME" />
-  <div class="grid grid-cols-[1fr_minmax(0,28rem)_1fr] min-h-screen items-center justify-center">
+  <div
+    class="contact grid grid-cols-[1fr_minmax(0,28rem)_1fr] min-h-screen items-center justify-center"
+  >
     <div class="bg-[url(/l-hand.png)] hands h-screen"></div>
 
     <form
