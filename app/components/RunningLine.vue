@@ -35,5 +35,8 @@ defineProps({
   from {
     transform: translateX(calc(100% + v-bind('space + "px"')));
   }
+  to {
+    transform: translateX(0);
+  }
 }
 </style>
