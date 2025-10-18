@@ -1,10 +1,11 @@
 <template>
+  <RunningLine class="mt-32 -z-50" word="CONTACT ME" />
   <div class="grid grid-cols-[1fr_minmax(0,28rem)_1fr] min-h-screen items-center justify-center">
     <div class="bg-[url(/l-hand.png)] hands h-screen"></div>
 
     <form
       @submit.prevent="handleSubmit"
-      class="contact relative flex flex-col block-layer1 bg-neutral-900 max-w-md w-full gap-2 !p-7 !pb-2"
+      class="relative flex flex-col block-layer1 bg-neutral-900 max-w-md w-full gap-2 !p-7 !pb-2"
     >
       <!-- Name -->
       <label for="name">
@@ -224,22 +225,6 @@ label {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
-}
-
-.contact::before {
-  content: 'CONTACT ME';
-  font-weight: 800;
-  position: absolute;
-  text-align: center;
-  top: -180px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 180px;
-  z-index: -1;
-  color: #222222;
-  pointer-events: none;
-  white-space: nowrap;
-  width: 90vw;
 }
 
 .hp {
