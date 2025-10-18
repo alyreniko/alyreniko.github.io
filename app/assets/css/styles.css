@@ -128,4 +128,5 @@ body {
   color: #222222;
   pointer-events: none;
   white-space: nowrap;
+  will-change: transform;
 }
