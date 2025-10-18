@@ -1,5 +1,7 @@
 <template>
-  <div class="*:text-neutral-600 a:hover:text-neutral-400 text-center py-2 bg-neutral-900">
+  <footer
+    class="footer *:text-neutral-600 a:hover:text-neutral-400 text-center py-2 bg-neutral-900"
+  >
     <p>© 2025 Diyor Haydarov (alyreniko). All rights reserved.</p>
     <p>
       The site is an open source project - repository on
@@ -25,7 +27,7 @@
       |
       <a class="link" href="#contact">Contact</a>
     </p>
-  </div>
+  </footer>
 </template>
 
 <style scoped>

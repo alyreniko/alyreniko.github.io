@@ -1,7 +1,7 @@
 <template>
   <RunningLine class="-z-50" word="ABOUT ME" />
   <div class="block-section !mt-4 flex flex-row justify-center items-center min-h-screen gap-8">
-    <div class="flex flex-col h-fit gap-8 w-1/2">
+    <div class="about flex flex-col h-fit gap-8">
       <div class="flex flex-col block-layer1 bg-neutral-900 gap-4" style="padding: 2rem">
         <p class="deep relative explain text-neutral-400 text-sm">
           “Deep knowledge” - I know this well and have worked with it extensively.
