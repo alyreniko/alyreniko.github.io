@@ -130,3 +130,34 @@ body {
   white-space: nowrap;
   will-change: transform;
 }
+
+@media (max-width: 430px) {
+  .hero {
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    padding: 0;
+    > div {
+      width: 100%;
+    }
+  }
+  .hero__desc {
+    flex-direction: column;
+  }
+  .hero__desc img {
+    padding: 1rem;
+  }
+  .tagblock {
+    padding: 0 2rem;
+    gap: 1rem;
+  }
+  .tagblock__line {
+    font-size: 60px;
+  }
+  .tagblock__icons {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .block-section {
+    margin: 0 10px;
+  }
+}

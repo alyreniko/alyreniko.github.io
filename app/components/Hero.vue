@@ -1,7 +1,9 @@
 <template>
-  <div class="block-section flex gap-10 overflow-x-hidden min-h-screen items-center justify-center">
+  <div
+    class="hero block-section flex gap-10 overflow-x-hidden min-h-screen items-center justify-center"
+  >
     <div class="block-layer1 bg-neutral-900 flex flex-col gap-5">
-      <div class="block-layer2 bg-neutral-800 inline-flex gap-5">
+      <div class="hero__desc block-layer2 bg-neutral-800 inline-flex gap-5">
         <div class="inline-table">
           <div class="table-caption">
             <img class="rounded-full" src="/avatar.webp" alt="Diyor Haydarov" draggable="false" />
@@ -33,19 +35,18 @@
         </a>
       </div>
     </div>
-    <div class="flex flex-col">
-      <h2 class="font-extrabold w-fit text-[100px] text-neutral-600">
+    <div class="tagblock flex flex-col">
+      <h2 class="tagblock__line font-extrabold w-fit text-[100px] text-neutral-600">
         Hi! I bring
         <span style="color: var(--color-accent-primary)">ideas</span>
         <br />
         to life with
         <span style="color: var(--color-button-hover)">design</span>
         <br />
-        and {
-        <span style="color: #2dba4e">code</span>
-        }
+        and
+        <span style="color: #2dba4e">{&nbspcode&nbsp}</span>
       </h2>
-      <div class="inline-flex flex-row gap-10 overflow-x-hidden mt-10">
+      <div class="tagblock__icons inline-flex flex-row gap-10 overflow-x-hidden mt-10">
         <Icon v-for="icon in icons" :key="icon" :name="icon" class="h-20 w-20" />
       </div>
     </div>
