@@ -58,6 +58,10 @@
   color: hsl(0, 0%, 96%); /* neutral-100 */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   width: 100%;

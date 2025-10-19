@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col relative min-h-screen">
+  <div id="projects" class="flex flex-col relative min-h-screen">
     <div class="relative">
       <!-- CODE SECTION -->
       <RunningLine class="-z-50" word="CODE" />
