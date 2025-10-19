@@ -1,0 +1,52 @@
+{
+  "code": [
+    {
+      "title": "HCI NSU",
+      "image": "https://repository-images.githubusercontent.com/947386461/d1f1370c-6e3a-4a4e-8406-558dd7b79255",
+      "description": "Коллекция учебных файлов и примеров кода, созданных в рамках ВКИ НГУ, с краткой информацией о каждой задаче и датой создания.",
+      "tags": ["python", "c", "c++", "c#"],
+      "source": "github",
+      "url": "https://github.com/alyreniko/hci-nsu"
+    },
+    {
+      "title": "Hearts of Stone and Steel",
+      "image": "https://repository-images.githubusercontent.com/895183581/907b1d12-50d3-41a9-a70c-fc7511e005cb",
+      "description": "Showcase demo of a detective game in Python/Pygame, featuring dialogues, interaction, camera system, dynamic movement, scene manager, and sound.",
+      "tags": ["python", "pygame"],
+      "source": "github",
+      "url": "https://github.com/alyreniko/hearts-of-stone-and-steel"
+    },
+    {
+      "title": "Egg Hunt",
+      "image": "https://repository-images.githubusercontent.com/1066928391/eccc5e25-aeeb-43f9-925e-6aab03b31971",
+      "description": "A 2D platformer created using Python and Pygame. Play as a boy in a chicken costume, collect eggs, and complete levels",
+      "tags": ["python", "pygame"],
+      "source": "github",
+      "url": "https://github.com/alyreniko/egg-hunt"
+    },
+    {
+      "title": "Pong Pygame",
+      "image": "https://repository-images.githubusercontent.com/867131715/61e97a26-9419-484f-8b47-76734e49ac86",
+      "description": "Pong in Python using Pygame - a simple and fun implementation of the classic arcade game for two players. This project is a great way to learn the basics of game development, graphics handling, and event processing in Python.",
+      "tags": ["python", "pygame"],
+      "source": "github",
+      "url": "https://github.com/alyreniko/pong_pygame"
+    },
+    {
+      "title": "Personal Website",
+      "image": "https://repository-images.githubusercontent.com/1073882924/f5152a72-25b7-4e3d-b434-839caa925359",
+      "description": "Personal website and blog hosted with GitHub Pages. Showcases my projects, articles, notes, and portfolio. Built with modern web technologies to provide a convenient and attractive online presence.",
+      "tags": ["javascript", "vue", "nuxt", "html/css"],
+      "source": "github",
+      "url": "https://github.com/alyreniko/alyreniko.github.io"
+    }
+  ],
+  "design": [
+    {
+      "title": "",
+      "image": "",
+      "url": "",
+      "source": ""
+    }
+  ]
+}
