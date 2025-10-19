@@ -4,7 +4,7 @@
   >
     <div class="hero__desc__links block-layer1 bg-neutral-900 flex flex-col gap-5">
       <div class="hero__desc block-layer2 bg-neutral-800 inline-flex gap-5">
-        <div class="inline-table">
+        <div id="person" class="inline-table">
           <div class="table-caption">
             <img class="rounded-full" src="/avatar.webp" alt="Diyor Haydarov" draggable="false" />
           </div>
