@@ -3,7 +3,7 @@
     {
       "title": "HCI NSU",
       "image": "https://repository-images.githubusercontent.com/947386461/d1f1370c-6e3a-4a4e-8406-558dd7b79255",
-      "description": "Коллекция учебных файлов и примеров кода, созданных в рамках ВКИ НГУ, с краткой информацией о каждой задаче и датой создания.",
+      "description": "A collection of tutorial files and code samples created during my studies at HCI NSU, with brief information about each task and the date it was created.",
       "tags": ["python", "c", "c++", "c#"],
       "source": "github",
       "url": "https://github.com/alyreniko/hci-nsu"
