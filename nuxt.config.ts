@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/icon'],
   devtools: { enabled: true },
   css: ['~/assets/css/styles.css'],
+  app: {
+    baseURL: '/',
+  },
   icon: {
     serverBundle: {
       collections: ['fa6-solid', 'skill-icons'],
