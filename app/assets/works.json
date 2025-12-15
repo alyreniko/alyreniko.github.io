@@ -47,6 +47,14 @@
       "tags": ["vue", "javascript", "html/css"],
       "source": "github",
       "url": "https://github.com/alyreniko/mortgage-calculator"
+    },
+    {
+      "title": "Knight Move",
+      "image": "https://repository-images.githubusercontent.com/1115865050/913d99c8-133a-4004-ab1b-3c241dc4318c",
+      "description": "A minimalistic logic game inspired by the classic chess knight movement. Built with Vue.js, the game challenges players to plan moves strategically while following traditional chess rules.",
+      "tags": ["vue", "javascript", "game", "html/css"],
+      "source": "github",
+      "url": "https://github.com/alyreniko/knight-move"
     }
   ],
   "design": [
