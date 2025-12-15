@@ -39,6 +39,14 @@
       "tags": ["javascript", "vue", "nuxt", "html/css"],
       "source": "github",
       "url": "https://github.com/alyreniko/alyreniko.github.io"
+    },
+    {
+      "title": "Mortgage Calculator",
+      "image": "https://repository-images.githubusercontent.com/1115814600/e7f22293-29fc-428f-abaa-a88c89cf4738",
+      "description": "A web application designed to help users estimate monthly mortgage payments. Built with Vue.js, it provides real-time calculations for loan amounts, interest rates, and terms.",
+      "tags": ["vue", "javascript", "html/css"],
+      "source": "github",
+      "url": "https://github.com/alyreniko/mortgage-calculator"
     }
   ],
   "design": [
