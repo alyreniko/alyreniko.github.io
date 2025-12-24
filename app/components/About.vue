@@ -87,13 +87,14 @@ const skills_code = {
   Python: 'deep',
   pygame: 'deep',
   HTML: 'deep',
+  CSS: 'deep',
   'Arch Linux': 'deep',
-  C: 'practic',
-  'C++': 'practic',
-  CSS: 'practic',
+  Vue: 'practic',
   JavaScript: 'practic',
+  C: 'practic',
+  'C++': 'basic',
   Git: 'practic',
-  Vue: 'basic',
+ 
 };
 
 const skills_design = {
