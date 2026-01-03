@@ -6,7 +6,7 @@
       "description": "A collection of tutorial files and code samples created during my studies at HCI NSU, with brief information about each task and the date it was created.",
       "tags": ["python", "c", "c++", "c#"],
       "source": "github",
-      "url": "https://github.com/alyreniko/hci-nsu"
+      "url": "https://github.com/arslanninin/hci-nsu"
     },
     {
       "title": "Hearts of Stone and Steel",
@@ -14,7 +14,7 @@
       "description": "Showcase demo of a detective game in Python/Pygame, featuring dialogues, interaction, camera system, dynamic movement, scene manager, and sound.",
       "tags": ["python", "pygame"],
       "source": "github",
-      "url": "https://github.com/alyreniko/hearts-of-stone-and-steel"
+      "url": "https://github.com/arslanninin/hearts-of-stone-and-steel"
     },
     {
       "title": "Egg Hunt",
@@ -22,7 +22,7 @@
       "description": "A 2D platformer created using Python and Pygame. Play as a boy in a chicken costume, collect eggs, and complete levels",
       "tags": ["python", "pygame"],
       "source": "github",
-      "url": "https://github.com/alyreniko/egg-hunt"
+      "url": "https://github.com/arslanninin/egg-hunt"
     },
     {
       "title": "Pong Pygame",
@@ -30,7 +30,7 @@
       "description": "Pong in Python using Pygame - a simple and fun implementation of the classic arcade game for two players. This project is a great way to learn the basics of game development, graphics handling, and event processing in Python.",
       "tags": ["python", "pygame"],
       "source": "github",
-      "url": "https://github.com/alyreniko/pong_pygame"
+      "url": "https://github.com/arslanninin/pong_pygame"
     },
     {
       "title": "Personal Website",
@@ -38,7 +38,7 @@
       "description": "Personal website and blog hosted with GitHub Pages. Showcases my projects, articles, notes, and portfolio. Built with modern web technologies to provide a convenient and attractive online presence.",
       "tags": ["javascript", "vue", "nuxt", "html/css"],
       "source": "github",
-      "url": "https://github.com/alyreniko/alyreniko.github.io"
+      "url": "https://github.com/arslanninin/alyreniko.github.io"
     },
     {
       "title": "Mortgage Calculator",
@@ -46,7 +46,7 @@
       "description": "A web application designed to help users estimate monthly mortgage payments. Built with Vue.js, it provides real-time calculations for loan amounts, interest rates, and terms.",
       "tags": ["vue", "javascript", "html/css"],
       "source": "github",
-      "url": "https://github.com/alyreniko/mortgage-calculator"
+      "url": "https://github.com/arslanninin/mortgage-calculator"
     },
     {
       "title": "Knight Move",
@@ -54,7 +54,15 @@
       "description": "A minimalistic logic game inspired by the classic chess knight movement. Built with Vue.js, the game challenges players to plan moves strategically while following traditional chess rules.",
       "tags": ["vue", "javascript", "game", "html/css"],
       "source": "github",
-      "url": "https://github.com/alyreniko/knight-move"
+      "url": "https://github.com/arslanninin/knight-move"
+    },
+    {
+      "title": "Notes App Vue",
+      "image": "https://repository-images.githubusercontent.com/1126858583/086fea43-74d6-46df-9de9-0b6d175b6a16",
+      "description": "A modern, fast, and beautiful notes application built with Vue 3, Vite, Tailwind CSS 4, Vue Router, and Pinia state management.",
+      "tags": ["vue", "vite", "tailwind", "javascript", "pinia", "vue router", "html/css"],
+      "source": "github",
+      "url": "https://github.com/arslanninin/notes-app-vue"
     }
   ],
   "design": [
